@@ -38,7 +38,7 @@ def open_file(label, mp4_button, mp3_button, wav_button):
         mp4_button.config(state="disabled")
 
 root = tk.Tk()
-root.title("MPConverter")
+root.title("MWConverter")
 root.geometry("600x320")
 root.configure(bg="lightgrey")
 
