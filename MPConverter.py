@@ -22,7 +22,7 @@ def convert_audio_to_mp3_or_wav(filepath, label):
 
 def convert(label):
     filepath = filedialog.askopenfilename()
-    threading.Thread(target=convert_audio_to_mp3_or_wav, args=(filepath, label)).start()
+    root.after(0, threading.Thread(target=convert_audio_to_mp3_or_wav, args=(filepath, label)).start)
 
 root = tk.Tk()
 root.title("動画・音声変換ツール")
