@@ -42,6 +42,14 @@ root.title("MWConverter")
 root.geometry("600x320")
 root.configure(bg="lightgrey")
 
+# アイコンを設定
+root.iconbitmap('icon_path.ico')
+
+# 以下のコードはそのまま...
+
+
+
+
 open_button = tk.Button(root, text="ファイルを選択", bg="blue", fg="white", font=("Helvetica", 16))
 open_button.pack(pady=10)
 
